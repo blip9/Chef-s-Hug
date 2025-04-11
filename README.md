@@ -1,12 +1,41 @@
-# React + Vite
+# Chef's Hug 🧑‍🍳
+A modern web application that helps you discover recipes based on the ingredients you have. Simply add your available ingredients, and let Chef's Hug suggest delicious recipes using AI-powered recommendations.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Features
 
-Currently, two official plugins are available:
+- **Ingredient Management**
+  - Add ingredients with a clean, intuitive interface
+  - Remove ingredients with one click
+  - Real-time list updates
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **AI-Powered Recipe Generation**
+  - Generates custom recipes based on your ingredients
+  - Provides detailed cooking instructions
+  - Includes measurements and notes for each ingredient
+  - Suggests variations and tips
 
-## Expanding the ESLint configuration
+- **Clean, Modern UI**
+  - Responsive design for all devices
+  - Smooth animations and transitions
+  - Intuitive navigation
+  - Clear visual hierarchy
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Technology Stack
+
+- React.js for the frontend
+- Vite as the build tool
+- Google's Gemini AI API for recipe generation
+- CSS3 with modern features (Grid, Flexbox)
+- Axios for API requests
+
+## Getting Started
+
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Create a .env file with your Gemini API key:
+   ```
+   VITE_GEMINI_KEY=your_api_key_here
+   ```
+4. Start the development server: `npm run dev`
+
+This project demonstrates modern React practices, state management, API integration, and responsive design principles while providing a practical solution for home cooks.
