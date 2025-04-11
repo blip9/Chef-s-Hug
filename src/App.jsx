@@ -4,6 +4,7 @@ import Form from './components/Form.jsx'
 import Ingredients from './components/Ingredients.jsx'
 import Recipe from './components/Recipe.jsx';
 import Footer from './components/Footer.jsx';
+import Intro from './components/Intro.jsx';
 function App() {
 
   const [ingredients, setIngredients] = useState([
@@ -29,6 +30,7 @@ function App() {
   return (
     <>
       <Header></Header>
+      <Intro></Intro>
       <Form  onAddIngredient={addIngredient}></Form>
       <Ingredients 
         ingredients={ingredients}
