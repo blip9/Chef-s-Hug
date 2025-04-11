@@ -22,7 +22,7 @@ export default function Form(props){
             </label>
             
             <button type="submit" className="submit-button" aria-label="Add to ingredients">
-                <img src="src\assets\add-button.png" alt="add-button" />
+                <img src="https://res.cloudinary.com/dfjeotqie/image/upload/v1744386588/axhfrcytj5x9cyxom718.png" alt="add-button" />
                 <span>Add ingredient</span>
             </button>
             

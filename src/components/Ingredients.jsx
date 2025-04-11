@@ -121,7 +121,7 @@ export default function Ingredients(props){
                     {props.ingredients.map(element=>
                         <li key={element.key}>
                             <div>{element.name}</div>
-                            <img  onClick={()=>deleteElement(element.key)}  src="src\assets\close-button.png" alt="close-button" />
+                            <img  onClick={()=>deleteElement(element.key)}  src="https://res.cloudinary.com/dfjeotqie/image/upload/v1744386588/us4x13ztfzadr6pgll8b.png" alt="close-button" />
                         </li>
                     )}
                 </ul>
