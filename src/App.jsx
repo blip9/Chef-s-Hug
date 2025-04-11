@@ -7,10 +7,7 @@ import Footer from './components/Footer.jsx';
 function App() {
 
   const [ingredients, setIngredients] = useState([
-          {
-              key:1,
-              name:"Butter"
-          }
+          
         ]);
   const [recipe,setRecipe] = useState(null);
   
