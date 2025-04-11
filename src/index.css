@@ -2,6 +2,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden; 
 }
 *{
   margin:0;
@@ -77,6 +78,7 @@ header{
   gap: 10px;
   padding: 3px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100vw;
 }
 header>img{
   width: 80px;
@@ -145,7 +147,7 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  width: 100%;
+  width: 90%;
   max-width: 400px;
   margin: 0 auto;
   padding: 0 20px;
@@ -163,6 +165,7 @@ li {
   border-radius: 6px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width:90%;
 }
 
 li:hover {
@@ -468,6 +471,7 @@ li img:hover {
 
 /* Mobile First Media Queries */
 @media screen and (max-width: 480px) {
+  
   header > img {
     width: 50px;
   }
@@ -487,13 +491,16 @@ li img:hover {
 
   form {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: auto;
-    padding: 0 1rem;
+    padding: 0px;
   }
+  
 
   .inputIngredients {
     width: 100%;
-    max-width: none;
+    max-width: 180px;
   }
 
   .recipe-card {
@@ -506,6 +513,7 @@ li img:hover {
 
   .ingredients-list {
     grid-template-columns: 1fr;
+    width: 90%;
   }
 
   .footer-content {
