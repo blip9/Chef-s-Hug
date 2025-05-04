@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import Header from './components/Header.jsx'
 import Form from './components/Form.jsx'
 import Ingredients from './components/Ingredients.jsx'
@@ -27,6 +27,14 @@ function App() {
   const addRecipe  = (newRecipe)=>{
     setRecipe(newRecipe);
   }
+
+  const recipeSection = useRef(null);
+
+  useEffect(()=>{
+    if(recipe!="" && recipeSection.current!=null){
+      recipeSection.current.scrollIntoView();
+    }
+  },[recipe]);
   return (
     <>
       <Header></Header>
@@ -36,7 +44,8 @@ function App() {
         ingredients={ingredients}
         onDeleteIngredient={deleteIngredient}
         onAddRecipe = {addRecipe}/>
-      {recipe && <Recipe recipe={recipe}></Recipe>}
+      
+      {recipe && <Recipe recipe={recipe} ref ={recipeSection}></Recipe>}
       <Footer></Footer>
     </>
   )

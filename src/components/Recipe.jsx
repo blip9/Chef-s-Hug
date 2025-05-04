@@ -1,11 +1,12 @@
 import { Fragment } from 'react';
 
-export default function Recipe({ recipe }) {
+export default function Recipe({ recipe,ref }) {
     console.log(recipe);
     if(recipe===null)return;
+    
     return (
         <Fragment>
-            <div className="recipe-container">
+            <div className="recipe-container" ref={ref}>
                 <div className="recipe-card">
                     <h2>{recipe.recipe_name}</h2>
                     <p className="description">{recipe.description}</p>
